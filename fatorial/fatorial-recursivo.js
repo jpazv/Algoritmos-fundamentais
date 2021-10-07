@@ -13,5 +13,3 @@ function fatorial(n) {
         return resultado
     }
 }
-
-fatorial(5)
