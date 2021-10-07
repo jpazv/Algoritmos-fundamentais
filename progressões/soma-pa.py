@@ -15,11 +15,3 @@ def somaPA(inicio, r, n):
             return sum(lista_elementos)
     else:
         return print('Deve haver pelo menos um elemento')
-
-
-
-
-
-
-
-
