@@ -1,7 +1,7 @@
 function PG(inicio, q, n) {
     let somatorio = inicio;
     
-    if(n > 1){
+    if(n > 1 && r != 0){
         for(let i = Math.abs(inicio); i <= Math.abs(inicio)*(Math.pow(q, n-1)); i *= q){
             console.log(somatorio);
             somatorio *= q;
