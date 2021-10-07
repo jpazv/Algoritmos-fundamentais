@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+    </head>
+        <script>
+            let a = parseInt(prompt('Digite até onde você deseja que sequência vá.\n O último termo mostrado será o posterior ao número digitado '))
+            let t1 = 0
+            let t2 = 1
+            
+            document.write(0 + '<br>')
+
+            while(true) {
+                t3 = t1 + t2
+                t1 = t2
+                t2 = t3
+                document.write(t3+ '<br>')
+                if (t3 > a) {
+                    break
+                }
+            }
+        </script>
+</html>
