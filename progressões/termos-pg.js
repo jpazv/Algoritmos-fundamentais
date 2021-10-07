@@ -11,7 +11,3 @@ function PG(inicio, q, n) {
         console.log('Não é possível ter um número negativo de termos')
     }
 }
-
-
-PG(10,2,5)
-
