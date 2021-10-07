@@ -1,0 +1,62 @@
+<h2>Calculadora de equação do segundo grau</h2>
+
+<script>
+function mostra(texto) {
+    document.write(texto + '<hr>')
+
+}
+var a = parseInt(prompt("Digite o valor 'a' da sua equação do segundo grau: "));
+var b = parseInt(prompt("Digite o valor 'b' da sua equação do segundo grau: "));
+var c = parseInt(prompt("Digite o valor 'c' da sua equação do segundo grau: "));
+
+
+var delta = ((b**2) - (4)*a*c);
+var x1 = (-(b) + (delta)**(1/2))/(2*a);
+var x2 = (-(b) - (delta)**(1/2))/(2*a);
+
+if (delta == 0){
+    if(b > 0 && c > 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup> +' + b + 'x  +' + c +'<br>' + 'E essas são as suas raízes reais e iguais: '+ x1 + '<br>'+ x2)
+    }
+    if(b > 0 && c < 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup> +' + b + 'x ' + c +'<br>' + 'E essas são as suas raízes reais e iguais: '+ x1 + '<br>'+ x2)
+    }
+    if (b < 0 && c> 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup>' + b + 'x  +' + c +'<br>' + 'E essas são as suas raízes reais e iguais: '+ x1 + '<br>'+ x2)
+    }
+    if(b<0 && c < 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup>' + b + 'x  ' + c +'<br>' + 'E essas são as suas raízes reais e iguais: '+ x1 + '<br>'+ x2)
+    }
+}
+
+if (delta > 0){ 
+    if(b > 0 && c > 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup> +' + b + 'x  +' + c +'<br>' + 'E essas são as suas raízes reais e diferentes: '+ x1 + '<br>'+ x2)
+    }
+    if(b > 0 && c < 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup> +' + b + 'x ' + c +'<br>' + 'E essas são as suas raízes reais e diferentes: '+ x1 + '<br>'+ x2)
+    }
+    if (b < 0 && c> 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup>' + b + 'x  +' + c +'<br>' + 'E essas são as suas raízes reais e diferentes: '+ x1 + '<br>'+ x2)
+    }
+    if (b < 0 && c < 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup>' + b + 'x  ' + c +'<br>' + 'E essas são as suas raízes reais e diferentes: '+ x1 + '<br>'+ x2)
+    }
+}
+
+if (delta < 0){
+    if(b > 0 && c > 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup> +' + b + 'x  +' + c +'<br>' + 'Essa equação não possui raízes reais')
+    }
+    if(b > 0 && c < 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup> +' + b + 'x ' + c +'<br>' + 'Essa equação não possui raízes reais')
+    }
+    if (b < 0 && c> 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup>' + b + 'x  +' + c +'<br>' + 'Essa equação não possui raízes reais')
+    }
+    if (b < 0 && c < 0){
+        mostra('Essa é a sua equação: ' + a +'x <sup>2</sup>' + b + 'x  ' + c +'<br>' + 'Essa equação não possui raízes reais')
+    }
+}
+</script>
+
