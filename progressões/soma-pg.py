@@ -1,5 +1,5 @@
 def somaPG(inicio, r, n):
-    if n > 0:
+    if n > 0 and r != 0:
         elementos = inicio
         lista_elementos = [elementos]
 
