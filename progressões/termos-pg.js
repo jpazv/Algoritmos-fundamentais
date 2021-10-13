@@ -1,10 +1,10 @@
-function PG(inicio, q, n) {
+function PG(inicio, razao, termos) {
     let somatorio = inicio;
     
-    if(n > 1 && r != 0){
-        for(let i = Math.abs(inicio); i <= Math.abs(inicio)*(Math.pow(q, n-1)); i *= q){
+    if(termos > 1 && razao != 0){
+        for(let i = Math.abs(inicio); i <= Math.abs(inicio)*(Math.pow(razao, termos-1)); i *= razao){
             console.log(somatorio);
-            somatorio *= q;
+            somatorio *= razao;
         }
     }
     else {
