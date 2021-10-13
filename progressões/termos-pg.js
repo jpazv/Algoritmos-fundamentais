@@ -2,7 +2,7 @@ function PG(inicio, razao, termos) {
     let somatorio = inicio;
     
     if(termos > 1 && razao != 0){
-        for(let i = Math.abs(inicio); i <= Math.abs(inicio)*(Math.pow(razao, termos-1)); i *= Math.abs(razao)){
+        for(let i = inicio; i <= (inicio)*(Math.pow(razao, termos-1)); i *= Math.abs(razao)){
             console.log(somatorio);
             somatorio *= razao;
         }
