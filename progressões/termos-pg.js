@@ -1,7 +1,7 @@
 function PG(inicio, razao, termos) {
     let somatorio = inicio;
     
-    if(termos > 1 && razao != 0){
+    if(termos > 1 && razao != 0 && Number.isInteger(termos)){
         for(let i = inicio; i <= (inicio)*(Math.pow(razao, termos-1)); i *= Math.abs(razao)){
             console.log(somatorio);
             somatorio *= razao;
