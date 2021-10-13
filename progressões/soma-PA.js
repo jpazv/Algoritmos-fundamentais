@@ -1,5 +1,5 @@
 function somaPA(inicio, razao, termos) {
-    if(termos>0){    
+    if(termos>0 && Number.isInteger(termos){    
         if(razao<0) {
             let somatorio = inicio
             let array_termos = []
