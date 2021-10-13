@@ -25,5 +25,3 @@ function somaPA(inicio, razao, termos) {
         console.log('É necessário haver pelo menos um termo')
     }    
 }
-somaPA(1,-1, 10)
-
