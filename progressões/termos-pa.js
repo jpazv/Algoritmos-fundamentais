@@ -1,17 +1,15 @@
-function PA(inicio, r, n) {
+function PA(inicio, razao, termos) {
     if(n>0){    
-        let somatorio = inicio;
-        
         if(r<0) {
-            for(let i = inicio; i >= (inicio + (n-1)*r); i+=r) {
-                console.log(somatorio);
-                somatorio += r;
+            for(let i = inicio; i >= (inicio + (termos-1)*razao); i+=razao) {
+                console.log(i);
+                i += r;
             }
         }
         else{
-            for(let i = inicio; i <= (inicio + (n-1)*r); i+=r) {
-                console.log(somatorio);
-                somatorio += r;
+            for(let i = inicio; i <= (inicio + (termos-1)*razao); i+=razao) {
+                console.log(i);
+               i += r;
             }
         }
     }
