@@ -1,5 +1,5 @@
 function PA(inicio, razao, termos) {
-    if(termos>0){    
+    if(termos>0 && Number.isInteger(termos)){    
         if(razao<0) {
             let somatorio = inicio
             for(let i = inicio; i >= (inicio + (termos-1)*razao); i+=razao) {
