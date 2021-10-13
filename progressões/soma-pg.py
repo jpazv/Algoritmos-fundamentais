@@ -1,18 +1,11 @@
-def somaPG(inicio, r, n):
-    if n > 0 and r != 0:
-        elementos = inicio
-        lista_elementos = [elementos]
+def somaPG(inicio, razao, termos):
+    if n > 0 and razao != 0:
+        termo = inicio
+        lista_termos = [termo]
+        for i in range(1, termos):
+            termo *= razao
+            lista_elementos.append(termo)
+        return sum(lista_termos)
 
-        if r > 0:
-            for i in range(1, n):
-                elementos *= r
-                lista_elementos.append(elementos)
-            return sum(lista_elementos)
-        if r < 0:
-            for i in range(1, n):
-                elementos *= r
-                lista_elementos.append(elementos)
-            return sum(lista_elementos)
     else:
-        return print('Deve haver pelo menos um elemento')
-
+        return print('Deve haver pelo menos um termo e a razão deve ser diferente de 0')
