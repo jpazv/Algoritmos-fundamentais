@@ -8,6 +8,6 @@ function PG(inicio, razao, termos) {
         }
     }
     else {
-        console.log('Não é possível ter um número negativo de termos ou razão igual a zero')
+        console.log('É necessário haver pelo menos um termo e a razão ser diferente de 0')
     }
 }
