@@ -8,7 +8,7 @@ function somaPA(inicio, razao, termos) {
                 array_termos.push(somatorio)
                 somatorio += razao;
             }
-            return console.log(array_termos.reduce(reducer));
+            return array_termos.reduce(reducer);
     }
     else{
         let somatorio = inicio
@@ -18,7 +18,7 @@ function somaPA(inicio, razao, termos) {
             array_termos.push(somatorio)
             somatorio+= razao;
         }
-        return console.log(array_termos.reduce(reducer));
+        return array_termos.reduce(reducer);
         }
     }
     else{
