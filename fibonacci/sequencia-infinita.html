@@ -1,0 +1,22 @@
+<script>   
+    function infinita(x, y) {
+        let denominador = 1;
+        let result = 0
+        let controle = 1
+        for (let i = 1; i<=y; i++){
+            result += controle*(x**denominador/factorial(denominador))
+            document.write(result + '<br>');
+            denominador += 2
+            controle *= -1
+        }
+        return result;
+    }
+    function factorial(number){
+        let result = 1;
+        for(let i = 1; i <= number; i++){
+            result *= i;
+        }
+        return result;
+    }
+    console.log(infinita(2,4))
+</script> 
